@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevaCita">
+
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Seleccione nombre de la cita: "/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tvNombre"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:id="@+id/separador1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/separador"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toBottomOf="@id/etNombre"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/separador1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Seleccione fecha de la cita: "/>
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/btnFecha"
+        app:layout_constraintTop_toBottomOf="@id/tvFecha"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnFecha"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvFecha"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="selecciona fecha"
+        android:onClick="onClick"/>
+
+    <View
+        android:id="@+id/separador2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/separador"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toBottomOf="@id/btnFecha"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/separador2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Seleccione hora de la cita: "/>
+
+    <EditText
+        android:id="@+id/etHora"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/btnHora"
+        app:layout_constraintTop_toBottomOf="@id/tvHora"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnHora"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvHora"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="seleccione hora"
+        android:onClick="onClick"/>
+
+    <View
+        android:id="@+id/separador3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/separador"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toBottomOf="@id/btnHora"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTipoCorte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/separador3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Seleccione tipo de corte para la cita de la cita: "/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTipoCorte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvTipoCorte"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProyectoMoviles</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">About Us</string>
+    <string name="tab_text_2">Profile</string>
+    <string-array name="mot">
+        <item>Mañana</item>
+        <item>Tarde</item>
+    </string-array>
+    <string name="elige1">Seleccione Mañana o Tarde</string>
+    <string name="descripcion">La finalidad de nuestra barberia es recoger la esencia de la barberia clasica y mezclarla con las nuevas tendencias, reinventando viejas modas y adaptandolas a los nuevps tiempos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
