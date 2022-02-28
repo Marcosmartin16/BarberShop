@@ -5,60 +5,236 @@
     android:layout_height="match_parent"
     tools:context=".fragments.AboutUsFragment">
 
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerSlider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"/>
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <TextView
+            android:id="@+id/tvdescripcion1"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:text="DESCRIPCION"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:text="Description"
-                android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tvdescripcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
+        <View
+            android:id="@+id/separador1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/separador"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/descripcion" />
+        <TextView
+            android:id="@+id/tvtelefono1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TELEFONO"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="130dp"/>
 
-            <View
-                android:id="@+id/separador"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/separador" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="158dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="220dp"
-                android:layout_marginRight="10dp"
-                android:text="Descripcion"
-                android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tvtelefono2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="917778434"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="40dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/descripcion"/>
+        <View
+            android:id="@+id/separador2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/separador"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:id="@+id/tvhorario1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HORARIO DE ATENCION"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"/>
 
-    </androidx.core.widget.NestedScrollView>
+        <TextView
+            android:id="@+id/tvLunes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunes"
+            android:textColor="@color/black"
+            android:layout_marginTop="230dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00-13:30/16:00-20:30"
+            android:layout_marginTop="230dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/tvMartes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Martes"
+            android:textColor="@color/black"
+            android:layout_marginTop="255dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00-13:30/16:00-20:30"
+            android:layout_marginTop="255dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/tvMiercoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miercoles"
+            android:textColor="@color/black"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00-13:30/16:00-20:30"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/tvJueves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jueves"
+            android:textColor="@color/black"
+            android:layout_marginTop="305dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00-13:30/16:00-20:30"
+            android:layout_marginTop="305dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/tvViernes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viernes"
+            android:textColor="@color/black"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00-13:30/16:00-20:30"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/tvSabado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabado:"
+            android:textColor="@color/black"
+            android:layout_marginTop="355dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00-14:00"
+            android:layout_marginTop="355dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/tvDomingo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domingo:"
+            android:textColor="@color/black"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrado"
+            android:textColor="@color/black"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="100dp"/>
+
+        <View
+            android:id="@+id/separador3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/separador"
+            android:layout_marginTop="405dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <TextView
+            android:id="@+id/tvdireccion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIRECCION"
+            android:textColor="@color/black"
+            android:layout_marginTop="410dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tvdireccion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calle Mijas 8 2A"
+            android:layout_marginTop="435dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"/>
 </FrameLayout>
