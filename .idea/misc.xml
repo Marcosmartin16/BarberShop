@@ -3,25 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Perfiles/am14dam2/Documents/BarberShop/app/src/main/res/layout/activity_main.xml" value="0.2296195652173913" />
-        <entry key="..\:/Perfiles/am14dam2/Documents/BarberShop/app/src/main/res/layout/activity_nueva_cita.xml" value="0.36666666666666664" />
-        <entry key="..\:/Perfiles/am14dam2/Documents/BarberShop/app/src/main/res/layout/activity_splash.xml" value="0.2296195652173913" />
-        <entry key="..\:/Perfiles/am14dam2/Documents/BarberShop/app/src/main/res/layout/citas.xml" value="0.2296195652173913" />
-        <entry key="..\:/Perfiles/am14dam2/Documents/BarberShop/app/src/main/res/layout/fragment_about_us.xml" value="0.33" />
-        <entry key="..\:/Perfiles/am14dam2/Documents/BarberShop/app/src/main/res/layout/fragment_profile.xml" value="0.2296195652173913" />
-        <entry key="..\:/Perfiles/am14dam2/Documents/BarberShop/app/src/main/res/layout/slide_item_container.xml" value="0.2798913043478261" />
-        <entry key="..\:/Perfiles/am14dam2/Documents/BarberShop/app/src/main/res/layout/tipo_corte.xml" value="0.2296195652173913" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/drawable/ic_contra.xml" value="0.1925" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/drawable/ic_correo.xml" value="0.1925" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/drawable/ic_entrar.xml" value="0.1925" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/drawable/ic_nino.xml" value="0.2695" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/drawable/separador.xml" value="0.245" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/activity_datos_cita.xml" value="0.26132246376811596" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/activity_editar_perfil.xml" value="0.33" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/activity_login.xml" value="0.4528301886792453" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/activity_main.xml" value="0.371875" />
-        <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/activity_nueva_cita.xml" value="0.1" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/activity_nueva_cita.xml" value="0.22" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/activity_sign_up.xml" value="0.371875" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/activity_tipo_corte.xml" value="0.371875" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/avatar.xml" value="0.1828774062816616" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/citas.xml" value="0.1828774062816616" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/fragment_about_us.xml" value="0.28199052132701424" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/fragment_appointment.xml" value="0.33" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/fragment_main.xml" value="0.33" />
-        <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/fragment_profile.xml" value="0.22540983606557377" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/slide_item_container.xml" value="0.1828774062816616" />
         <entry key="..\:/ProyectoMoviles/app/src/main/res/layout/tipo_corte.xml" value="0.371875" />
       </map>

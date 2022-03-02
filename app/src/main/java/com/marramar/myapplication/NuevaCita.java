@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import com.marramar.myapplication.adapter.CitaAdapter;
 import com.marramar.myapplication.adapter.TipoCorteAdapter;
@@ -23,10 +25,8 @@ import java.util.Calendar;
 
 public class NuevaCita extends AppCompatActivity implements View.OnClickListener {
 
-    Button btFecha;
-    Button btHora;
-    EditText etFecha;
-    EditText etHora;
+    Button btFecha, btHora, btConfirmar;
+    EditText etNombre,etFecha, etHora, etTipoCorte;
     private int dia,mes, año, hora, minutos;
 
     RecyclerView recyclerTipoCorte;
@@ -38,12 +38,27 @@ public class NuevaCita extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nueva_cita);
 
+        getSupportActionBar().hide();
+
         btFecha = findViewById(R.id.btnFecha);
         btHora = findViewById(R.id.btnHora);
+        btConfirmar = findViewById(R.id.btnConfirmar);
         etFecha = findViewById(R.id.etFecha);
         etHora = findViewById(R.id.etHora);
+        etNombre = findViewById(R.id.etNombre);
+        etTipoCorte = findViewById(R.id.etTipoCorte);
+
         btFecha.setOnClickListener(this);
         btHora.setOnClickListener(this);
+
+
+        btConfirmar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Confirmar();
+            }
+        });
+
 
 
         recyclerTipoCorte = findViewById(R.id.rvTipoCorte);
@@ -98,6 +113,29 @@ public class NuevaCita extends AppCompatActivity implements View.OnClickListener
                 }
             },hora,minutos,false);
             timePickerDialog.show();
+        }
+    }
+
+    public void Confirmar(){
+        String nombre = etNombre.getText().toString();
+        String fecha = etFecha.getText().toString();
+        String hora = etHora.getText().toString();
+        String tipoCorte = etTipoCorte.getText().toString();
+
+        if (nombre.equals("") || fecha.equals("") || hora.equals("") || tipoCorte.equals("")) {
+            Toast toast = Toast.makeText(getApplicationContext(), "Complete todos los campos", Toast.LENGTH_SHORT);
+            toast.show();
+        } else {
+
+            Intent intent = new Intent(this, NuevaCita.class);
+            intent.putExtra("Nombre", nombre);
+            intent.putExtra("Fecha", fecha);
+            intent.putExtra("Hora", hora);
+            intent.putExtra("TipoCorte", tipoCorte);
+
+            startActivity(intent);
+
+            this.finish();
         }
     }
 }

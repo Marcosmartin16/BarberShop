@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.marramar.myapplication.Citas;
+import com.marramar.myapplication.EditarPerfil;
 import com.marramar.myapplication.NuevaCita;
 import com.marramar.myapplication.R;
 import com.marramar.myapplication.adapter.CitaAdapter;
@@ -41,7 +42,8 @@ public class ProfileFragment extends Fragment{
 
     RecyclerView recyclerCitas;
     ArrayList<Citas> citas;
-    Button nuevaCita;
+    Button nuevaCita,btEditar;
+    private TextView tv1;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -74,8 +76,6 @@ public class ProfileFragment extends Fragment{
         }
     }
 
-    private TextView tv1;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -98,10 +98,15 @@ public class ProfileFragment extends Fragment{
             }
         });
 
+        btEditar = mView.findViewById(R.id.btEdProfile);
+        btEditar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), EditarPerfil.class);
+                startActivity(intent);
+            }
+        });
         return mView;
-
-
-
     }
 
     //Cambiarlo para llenar con base de datos Mirar youtube
