@@ -30,6 +30,8 @@ public class AvatarAdapter extends RecyclerView.Adapter<AvatarAdapter.AvatarView
     private int posicionMarcada;
     private TextView ultimaSeleccion;
     private LayoutInflater inflador;
+    public static Avatar avatarSeleccion=null;
+    public static int avatarIdSeleccion = 0;
 
     public AvatarAdapter(Context conntexto, ArrayList<Avatar> avatares){
         this.avatares =  avatares;
@@ -46,12 +48,14 @@ public class AvatarAdapter extends RecyclerView.Adapter<AvatarAdapter.AvatarView
     public void onBindViewHolder(AvatarAdapter.AvatarViewHolder holder , int position){
 
         Avatar avatar = avatares.get(position);
-        holder.idAvatar.setImageResource(avatar.getImagenid(position));
+        holder.idAvatar.setImageResource(avatar.getImagen(position));
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                avatarSeleccion = avatares.get(position);
+                avatarIdSeleccion = position +1;
                 TextView barra = view.findViewById(R.id.barraSeleccionId);
 
                 if (barra == ultimaSeleccion){
