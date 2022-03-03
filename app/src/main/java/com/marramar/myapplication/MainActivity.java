@@ -8,6 +8,7 @@ import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+
 import com.marramar.myapplication.ui.main.SectionsPagerAdapter;
 import com.marramar.myapplication.databinding.ActivityMainBinding;
 

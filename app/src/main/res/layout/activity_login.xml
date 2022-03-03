@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/tv1"
@@ -16,45 +17,34 @@
         android:layout_marginTop="70dp"
         android:text="BARBERSHOP"
         android:textSize="20sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/etCorreo"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
         app:layout_constraintTop_toBottomOf="@id/tv1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:startIconDrawable="@drawable/ic_correo">
+        android:layout_marginTop="35dp"
+        android:textColor="@color/white"
+        android:hint="Correo"
+        android:textColorHint="@color/white"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Correo"
-            android:maxLines="1" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/etContraseña"
         android:layout_width="300dp"
         android:layout_height="50dp"
         app:layout_constraintTop_toBottomOf="@id/etCorreo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="20dp"
-        app:passwordToggleEnabled="true"
-        app:startIconDrawable="@drawable/ic_contra">
+        android:layout_marginTop="35dp"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:hint="Contraseña"
+        android:textColorHint="@color/white"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:maxLines="1" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
+    <Button
         android:id="@+id/sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,8 +52,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="30dp"
-        android:text="¿No tienes cuenta? Crea una."
-        android:textColor="#3366BB"/>
+        android:text="Crear una."
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/btEntrar"

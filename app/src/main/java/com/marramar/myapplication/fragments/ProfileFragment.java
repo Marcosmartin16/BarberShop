@@ -98,14 +98,14 @@ public class ProfileFragment extends Fragment{
             }
         });
 
-        btEditar = mView.findViewById(R.id.btEdProfile);
+      /*  btEditar = mView.findViewById(R.id.btEdProfile);
         btEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), EditarPerfil.class);
                 startActivity(intent);
             }
-        });
+        });*/
         return mView;
     }
 

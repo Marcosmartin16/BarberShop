@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,7 +27,6 @@ public class EditarPerfil extends AppCompatActivity {
     EditText etNombre;
     Activity actividad;
     public static Avatar avatarSeleccion=null;
-    public static int avatarIdSeleccion = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,14 +68,37 @@ public class EditarPerfil extends AppCompatActivity {
 
         if(etNombre.getText().toString()!=null && !etNombre.getText().toString().trim().equals("")){
 
+            int avatarId =  avatarSeleccion.getImagenid();
+            String nombre = etNombre.getText().toString();
+
             String registro = "Nombre: " + etNombre.getText().toString() + "\n";
             registro += "AvatarId: " + avatarSeleccion.getImagenid();
 
-        Toast.makeText(EditarPerfil.this,"Registrar \n" + registro, Toast.LENGTH_LONG).show();
+            Toast.makeText(EditarPerfil.this,"Registrar \n" + registro, Toast.LENGTH_LONG).show();
+
+            /*ConexionSQLiteHelper conn = new ConexionSQLiteHelper(actividad, Utilidades.NOMBRE_DB,null,1);
+
+            SQLiteDatabase db = conn.getWritableDatabase();
+
+            ContentValues values = new ContentValues();
+            values.put(Utilidades.CAMPO_ID, avatarId);
+            values.put(Utilidades.CAMPO_AVATAR, nombre);
+
+            Long idResultante = db.insert(Utilidades.TABLA_PERFIL,Utilidades.CAMPO_ID, values);
+
+            if (idResultante != -1){
+                Toast.makeText(EditarPerfil.this,"Registrar \n"+ idResultante + " - " + registro, Toast.LENGTH_LONG).show();
+                etNombre.setText("");
+            }else{
+                Toast.makeText(EditarPerfil.this,"No se pudo registrar al usuario \n" + registro, Toast.LENGTH_LONG).show();
+            }
+
+            db.close();*/
 
         }else{
             Toast.makeText(this,"Debe rellenar todos los datos", Toast.LENGTH_LONG).show();
         }
+
     }
 
 }
