@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditarPerfil">
+    tools:context=".EditarPerfil"
+    android:background="@color/black">
 
         <TextView
             android:id="@+id/tvEdit"
@@ -13,9 +14,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="30dp"
             android:text="EDITAR PERFIL"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp"/>
 
         <TextView
@@ -27,7 +28,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:text="Nombre de usuario"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/etNombre"
@@ -36,7 +37,9 @@
             app:layout_constraintTop_toBottomOf="@id/tvEdit"
             app:layout_constraintLeft_toRightOf="@id/tvNombre"
             android:hint="nombre"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:textColorHint="@color/white"/>
 
         <TextView
             android:id="@+id/tvAvatar"
@@ -47,7 +50,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:text="Elige tu avatar"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvAvatar"
@@ -69,6 +72,6 @@
         android:layout_marginTop="40dp"
         android:backgroundTint="@color/white"
         android:textColor="@color/black"
-        android:text="Crear"/>
+        android:text="Cambiar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

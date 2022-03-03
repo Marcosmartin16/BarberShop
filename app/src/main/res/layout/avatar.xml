@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/cardAvatar"
         android:layout_margin="3dp"
-        app:cardUseCompatPadding="true">
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,7 +22,7 @@
                 android:id="@+id/idAvatar"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/aaaaaaaaaaaaaaa"
+                android:src="@drawable/avatar1"
                 android:layout_gravity="center_horizontal"/>
 
             <TextView

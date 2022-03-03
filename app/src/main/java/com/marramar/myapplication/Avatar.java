@@ -8,7 +8,7 @@ public class Avatar {
         this.imagenid = imagenid;
     }
 
-    public int getImagenid(){
+    public int getImagenid(int position){
         return imagenid;
     }
 
