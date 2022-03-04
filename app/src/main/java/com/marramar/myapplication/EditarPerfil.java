@@ -74,27 +74,6 @@ public class EditarPerfil extends AppCompatActivity {
             String registro = "Nombre: " + etNombre.getText().toString() + "\n";
             registro += "AvatarId: " + avatarSeleccion.getImagenid();
 
-            Toast.makeText(EditarPerfil.this,"Registrar \n" + registro, Toast.LENGTH_LONG).show();
-
-            /*ConexionSQLiteHelper conn = new ConexionSQLiteHelper(actividad, Utilidades.NOMBRE_DB,null,1);
-
-            SQLiteDatabase db = conn.getWritableDatabase();
-
-            ContentValues values = new ContentValues();
-            values.put(Utilidades.CAMPO_ID, avatarId);
-            values.put(Utilidades.CAMPO_AVATAR, nombre);
-
-            Long idResultante = db.insert(Utilidades.TABLA_PERFIL,Utilidades.CAMPO_ID, values);
-
-            if (idResultante != -1){
-                Toast.makeText(EditarPerfil.this,"Registrar \n"+ idResultante + " - " + registro, Toast.LENGTH_LONG).show();
-                etNombre.setText("");
-            }else{
-                Toast.makeText(EditarPerfil.this,"No se pudo registrar al usuario \n" + registro, Toast.LENGTH_LONG).show();
-            }
-
-            db.close();*/
-
         }else{
             Toast.makeText(this,"Debe rellenar todos los datos", Toast.LENGTH_LONG).show();
         }

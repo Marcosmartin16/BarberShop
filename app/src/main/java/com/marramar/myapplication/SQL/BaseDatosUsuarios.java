@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import androidx.annotation.Nullable;
 
-public class BaseDatosUsuarios extends AdminSQLite{
+public class BaseDatosUsuarios extends SQLite {
 
     public Context context;
 
@@ -22,7 +22,7 @@ public class BaseDatosUsuarios extends AdminSQLite{
         long id = 0;
 
         try {
-            AdminSQLite dbHelper = new AdminSQLite(context);
+            SQLite dbHelper = new SQLite(context);
             SQLiteDatabase db = dbHelper.getWritableDatabase();
 
             ContentValues values = new ContentValues();

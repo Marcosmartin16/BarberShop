@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.marramar.myapplication.SQL.AdminSQLite;
+import com.marramar.myapplication.SQL.SQLite;
 import com.marramar.myapplication.SQL.BaseDatosUsuarios;
 
 public class Sign_up extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class Sign_up extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        AdminSQLite dbHelper = new AdminSQLite(this);
+        SQLite dbHelper = new SQLite(this);
 
         btCrear = findViewById(R.id.btCrear);
         etNombre = findViewById(R.id.etNombre);

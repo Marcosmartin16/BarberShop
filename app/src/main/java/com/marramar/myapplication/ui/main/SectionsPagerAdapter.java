@@ -9,8 +9,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.marramar.myapplication.R;
-import com.marramar.myapplication.fragments.AboutUsFragment;
-import com.marramar.myapplication.fragments.ProfileFragment;
+import com.marramar.myapplication.fragments.InformacionFragment;
+import com.marramar.myapplication.fragments.PerfilFragment;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -32,9 +32,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         switch (position){
             case 0:
-                return new AboutUsFragment();
+                return new InformacionFragment();
             case 1:
-                return new ProfileFragment();
+                return new PerfilFragment();
             default:
                 return null;
         }

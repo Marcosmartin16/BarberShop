@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">ProyectoMoviles</string>
+    <string name="app_name">BarberShop 256</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="tab_text_1">About Us</string>
-    <string name="tab_text_2">Profile</string>
+    <string name="tab_text_1">Informacion</string>
+    <string name="tab_text_2">Perfil</string>
     <string-array name="mot">
         <item>Mañana</item>
         <item>Tarde</item>

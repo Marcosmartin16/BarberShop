@@ -25,10 +25,10 @@ import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ProfileFragment#newInstance} factory method to
+ * Use the {@link PerfilFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ProfileFragment extends Fragment{
+public class PerfilFragment extends Fragment{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -44,7 +44,7 @@ public class ProfileFragment extends Fragment{
     Button nuevaCita,btEditar;
     private TextView tv1;
 
-    public ProfileFragment() {
+    public PerfilFragment() {
         // Required empty public constructor
     }
 
@@ -57,8 +57,8 @@ public class ProfileFragment extends Fragment{
      * @return A new instance of fragment AppointmentFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ProfileFragment newInstance(String param1, String param2) {
-        ProfileFragment fragment = new ProfileFragment();
+    public static PerfilFragment newInstance(String param1, String param2) {
+        PerfilFragment fragment = new PerfilFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -118,7 +118,6 @@ public class ProfileFragment extends Fragment{
         return mView;
     }
 
-    //Cambiarlo para llenar con base de datos Mirar youtube
     private void llenarLista(){
         citas.add(new Citas("Marcos","10/5/2022","14:30",R.drawable.ic_check));
     }

@@ -4,17 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.marramar.myapplication.SQL.AdminSQLite;
+import com.marramar.myapplication.SQL.SQLite;
 import com.marramar.myapplication.SQL.BaseDatosUsuarios;
 
 public class Login extends AppCompatActivity {
@@ -28,7 +25,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        AdminSQLite dbHelper = new AdminSQLite(this);
+        SQLite dbHelper = new SQLite(this);
 
         etCorreo = findViewById(R.id.etCorreo);
         etContraseña = findViewById(R.id.etContraseña);

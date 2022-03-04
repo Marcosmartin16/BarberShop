@@ -10,16 +10,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.marramar.myapplication.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link AboutUsFragment#newInstance} factory method to
+ * Use the {@link InformacionFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AboutUsFragment extends Fragment {
+public class InformacionFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,7 +29,7 @@ public class AboutUsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public AboutUsFragment() {
+    public InformacionFragment() {
         // Required empty public constructor
     }
 
@@ -43,8 +42,8 @@ public class AboutUsFragment extends Fragment {
      * @return A new instance of fragment AboutUsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static AboutUsFragment newInstance(String param1, String param2) {
-        AboutUsFragment fragment = new AboutUsFragment();
+    public static InformacionFragment newInstance(String param1, String param2) {
+        InformacionFragment fragment = new InformacionFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

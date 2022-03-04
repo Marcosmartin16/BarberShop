@@ -8,11 +8,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class AdminSQLite extends SQLiteOpenHelper {
+public class SQLite extends SQLiteOpenHelper {
 
     private final String sqlcreate = "CREATE TABLE usuarios (email text PRIMARY KEY, nombreUsuario text, contrasenia text)";
 
-    public AdminSQLite(@Nullable Context context) {
+    public SQLite(@Nullable Context context) {
         super(context, "usuarios", null, 1);
     }
 
