@@ -127,15 +127,13 @@ public class NuevaCita extends AppCompatActivity implements View.OnClickListener
             toast.show();
         } else {
 
-            Intent intent = new Intent(this, NuevaCita.class);
+            Intent intent = new Intent(getApplicationContext(), NuevaCita.class);
             intent.putExtra("Nombre", nombre);
             intent.putExtra("Fecha", fecha);
             intent.putExtra("Hora", hora);
             intent.putExtra("TipoCorte", tipoCorte);
 
             startActivity(intent);
-
-            this.finish();
         }
     }
 }

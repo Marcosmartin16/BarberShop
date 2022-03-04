@@ -49,14 +49,15 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="158dp"/>
 
-        <TextView
+        <Button
             android:id="@+id/tvtelefono2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="917778434"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="145dp"
             android:layout_marginRight="10dp"
-            android:layout_marginLeft="40dp"/>
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="@color/transparent"/>
 
         <View
             android:id="@+id/separador2"

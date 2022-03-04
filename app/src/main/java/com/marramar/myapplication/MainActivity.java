@@ -1,9 +1,12 @@
 package com.marramar.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 
 import com.google.android.material.tabs.TabLayout;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
@@ -34,5 +37,23 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = binding.tabs;
         tabs.setupWithViewPager(viewPager);
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
+
+        alertDialog.setCancelable(false).setPositiveButton("Sí salir", (dialog, which) -> {
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }).setNegativeButton("No salir", (dialog, which) -> dialog.dismiss());
+
+        AlertDialog titulo = alertDialog.create();
+        titulo.setTitle("Vas a salir de la aplicación, ¿Quieres continuar?");
+        titulo.show();
+
+        return super.onKeyDown(keyCode, event);
     }
 }
