@@ -26,28 +26,42 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="135dp"
             android:layout_marginTop="40dp"
-            android:text="Nombre de usuario"
+            android:text="Marcos"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
     </androidx.cardview.widget.CardView>
 
-    <!--<Button
+    <Button
         android:id="@+id/btEdProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/cvFoto"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btMusica"
         android:text="editar perfil"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"/>-->
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/button_custom2"/>
+
+    <Button
+        android:id="@+id/btMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cvFoto"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Musica"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button_custom"/>
 
     <View
         android:id="@+id/separador"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:background="@drawable/separador"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="70dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         app:layout_constraintTop_toBottomOf="@id/cvFoto"
@@ -82,6 +96,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:text="Nueva Cita"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/button_custom2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

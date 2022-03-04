@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +21,7 @@ public class Login extends AppCompatActivity {
 
     EditText etCorreo, etContraseña;
     Button btEntrar, btSign;
+    ImageButton btActivar,btDesactivar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +34,6 @@ public class Login extends AppCompatActivity {
         etContraseña = findViewById(R.id.etContraseña);
         btEntrar = findViewById(R.id.btEntrar);
         btSign = findViewById(R.id.sign_up);
-
-
-        /*db = new DBHelper(this);*/
 
         btSign.setOnClickListener(new View.OnClickListener() {
             @Override

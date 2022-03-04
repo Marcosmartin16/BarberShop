@@ -12,12 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.marramar.myapplication.Citas;
 import com.marramar.myapplication.EditarPerfil;
+import com.marramar.myapplication.Musica;
 import com.marramar.myapplication.NuevaCita;
 import com.marramar.myapplication.R;
 import com.marramar.myapplication.adapter.CitaAdapter;
@@ -98,14 +97,24 @@ public class ProfileFragment extends Fragment{
             }
         });
 
-      /*  btEditar = mView.findViewById(R.id.btEdProfile);
+        Button btMusica = mView.findViewById(R.id.btMusica);
+        btMusica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), Musica.class);
+                startActivity(intent);
+            }
+        });
+
+      btEditar = mView.findViewById(R.id.btEdProfile);
         btEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), EditarPerfil.class);
                 startActivity(intent);
             }
-        });*/
+        });
+
         return mView;
     }
 
@@ -113,7 +122,6 @@ public class ProfileFragment extends Fragment{
     private void llenarLista(){
         citas.add(new Citas("Marcos","10/5/2022","14:30",R.drawable.ic_check));
     }
-
 
     public void onNothingSelected(AdapterView<?> parent) {
         tv1.setText("");

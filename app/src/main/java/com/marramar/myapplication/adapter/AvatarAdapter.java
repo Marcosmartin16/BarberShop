@@ -69,9 +69,6 @@ public class AvatarAdapter extends RecyclerView.Adapter<AvatarAdapter.AvatarView
                     posicionMarcada = position;
                     ultimaSeleccion = barra;
                 }
-
-
-
             }
         });
     }

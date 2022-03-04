@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.marramar.myapplication">
 
     <application
@@ -8,7 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProyectoMoviles">
+        android:theme="@style/Theme.ProyectoMoviles.NoActionBar">
 
         <activity
             android:name=".Splash"
@@ -21,35 +22,29 @@
         </activity>
         <activity
             android:name=".Login"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Sign_up"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Musica"
             android:exported="true">
 
         </activity>
         <activity
             android:name=".EditarPerfil"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".NuevaCita"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".DatosCita"
-            android:exported="true">
+            android:exported="true"></activity>
 
-        </activity>
+        <service android:name=".Servicio" />
     </application>
 
 </manifest>

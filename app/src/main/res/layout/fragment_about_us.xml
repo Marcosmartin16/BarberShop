@@ -57,7 +57,8 @@
             android:layout_marginTop="145dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="40dp"
-            android:backgroundTint="@color/transparent"/>
+            android:backgroundTint="@color/button_custom2"
+            android:textColor="@color/black"/>
 
         <View
             android:id="@+id/separador2"

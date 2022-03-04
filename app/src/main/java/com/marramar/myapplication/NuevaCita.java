@@ -37,9 +37,7 @@ public class NuevaCita extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nueva_cita);
-
-        getSupportActionBar().hide();
-
+        
         btFecha = findViewById(R.id.btnFecha);
         btHora = findViewById(R.id.btnHora);
         btConfirmar = findViewById(R.id.btnConfirmar);
